@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>833PROBAID Newsletter - Probate Real Estate Insider</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f3f4f6;
+      padding: 64px 16px;
+      line-height: 1.6;
+    }
+    
+    .newsletter-container {
+      max-width: 680px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    
+    /* Header Styles */
+    .header {
+      background: linear-gradient(to bottom right, #0097A7, #007a87);
+      padding: 56px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header-wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background-color: #ffffff;
+      clip-path: ellipse(100% 100% at 50% 100%);
+    }
+    
+    .logo-container {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    
+    .logo-box {
+      display: inline-block;
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 20px 32px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo-box img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+    
+    .newsletter-title {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    
+    .newsletter-title h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: -0.025em;
+    }
+    
+    .newsletter-title p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    
+    .intro-text {
+      max-width: 576px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .intro-text p {
+      color: rgba(255, 255, 255, 0.95);
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    
+    /* Content Section */
+    .content-section {
+      padding: 64px 40px;
+      background-color: #ffffff;
+    }
+    
+    .section-header {
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    
+    .section-header h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    
+    .gradient-line {
+      height: 4px;
+      background: linear-gradient(to right, #0097A7, #FD7702);
+      border-radius: 9999px;
+      margin-top: 8px;
+    }
+    
+    .content-items {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    
+    .content-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      border: 2px solid #f3f4f6;
+      padding: 28px;
+      display: flex;
+      gap: 24px;
+      transition: all 0.3s ease;
+    }
+    
+    .content-card:hover {
+      border-color: #0097A7;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-number {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(to bottom right, #0097A7, #007a87);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-text h3 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #111827;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+    
+    .card-text p {
+      color: #4b5563;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      padding: 64px 40px;
+      background: linear-gradient(to bottom right, #f9fafb, #ffffff);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-content {
+      max-width: 512px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .cta-icon-box {
+      display: inline-block;
+      padding: 16px;
+      background-color: #ffffff;
+      border-radius: 9999px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 24px;
+    }
+    
+    .cta-icon {
+      width: 48px;
+      height: 48px;
+      color: #0097A7;
+    }
+    
+    .cta-content h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+    
+    .cta-content p {
+      color: #4b5563;
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(to right, #FD7702, #e56902);
+      color: #ffffff;
+      font-weight: 700;
+      padding: 20px 48px;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      box-shadow: 0 25px 50px -12px rgba(253, 119, 2, 0.5);
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background: linear-gradient(to right, #e56902, #cc5d02);
+      transform: scale(1.05);
+    }
+    
+    /* Resources Section */
+    .resources-section {
+      padding: 64px 40px;
+      background-color: #ffffff;
+    }
+    
+    .resources-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    
+    @media (min-width: 768px) {
+      .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .resource-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      border: 2px solid #f3f4f6;
+      padding: 28px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .resource-card:hover {
+      border-color: #0097A7;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .resource-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .resource-card h3 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    
+    .resource-card p {
+      color: #4b5563;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    
+    .resource-link {
+      display: flex;
+      align-items: center;
+      color: #0097A7;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    /* Downloads Section */
+    .downloads-section {
+      padding: 64px 40px;
+      background: linear-gradient(to bottom right, #f9fafb, #ffffff);
+    }
+    
+    .downloads-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 672px;
+      margin: 0 auto;
+    }
+    
+    .download-item {
+      background-color: #ffffff;
+      border-radius: 12px;
+      border: 2px solid #f3f4f6;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .download-item:hover {
+      border-color: #FD7702;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .download-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 1;
+    }
+    
+    .download-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      background: linear-gradient(to bottom right, #FD7702, #e56902);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    
+    .download-info h3 {
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 4px;
+      font-size: 16px;
+    }
+    
+    .download-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+    
+    .file-format {
+      padding: 4px 8px;
+      background-color: #f3f4f6;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    
+    .download-arrow {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 9999px;
+      background-color: #f3f4f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 16px;
+    }
+    
+    .download-notice {
+      margin-top: 40px;
+      max-width: 672px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .notice-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      border: 2px solid rgba(0, 151, 167, 0.2);
+      padding: 24px;
+      text-align: center;
+    }
+    
+    .notice-box p {
+      color: #374151;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    
+    .notice-highlight {
+      font-weight: 600;
+      color: #0097A7;
+    }
+    
+    /* Footer Section */
+    .footer {
+      background: linear-gradient(to bottom right, #f3f4f6, #f9fafb);
+      padding: 64px 40px;
+    }
+    
+    .signature-banner {
+      margin-bottom: 48px;
+    }
+    
+    .signature-box {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      border: 2px solid #f3f4f6;
+    }
+    
+    .signature-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    
+    .footer-tagline {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .footer-tagline h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+    
+    .footer-tagline p {
+      color: #4b5563;
+      line-height: 1.6;
+      max-width: 672px;
+      margin: 0 auto;
+      font-size: 15px;
+    }
+    
+    .families-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      margin-top: 24px;
+    }
+    
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      background-color: #10b981;
+      border-radius: 9999px;
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .5; }
+    }
+    
+    .families-badge span {
+      font-weight: 600;
+      color: #111827;
+    }
+    
+    .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    
+    .social-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+      background: linear-gradient(to bottom right, #0097A7, #007a87);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      background: linear-gradient(to bottom right, #FD7702, #e56902);
+      transform: scale(1.1);
+    }
+    
+    .legal-footer {
+      text-align: center;
+      color: #4b5563;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    
+    .legal-footer p {
+      margin-bottom: 12px;
+    }
+    
+    .company-name {
+      font-weight: 600;
+      color: #111827;
+    }
+    
+    .disclaimer {
+      padding-top: 16px;
+      color: #6b7280;
+      max-width: 576px;
+      margin: 0 auto;
+    }
+    
+    .footer-links {
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    
+    .footer-links a {
+      color: #0097A7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .footer-links a:hover {
+      color: #FD7702;
+    }
+    
+    .footer-divider {
+      color: #d1d5db;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="newsletter-container">
+    
+    <!-- ========== HEADER SECTION ========== -->
+    <header class="header">
+      <div class="header-wave"></div>
+      
+      <!-- Logo -->
+      <div class="logo-container">
+        <div class="logo-box">
+          <img 
+            src="./img/screenshot-202025-11-14-20at-203.png"
+            alt="833PROBAID Logo"
+          />
+        </div>
+      </div>
+
+      <!-- Newsletter Title -->
+      <div class="newsletter-title">
+        <h1>Probate Real Estate Insider</h1>
+        <p>Your Weekly Legal & Real Estate Resource</p>
+      </div>
+
+      <!-- Intro Paragraphs -->
+      <div class="intro-text">
+        <p>
+          Welcome to your exclusive weekly resource for attorneys, executors, trustees, and families navigating probate, trust, and conservatorship real estate matters. This newsletter delivers actionable insights, legal updates, and proven strategies directly to your inbox.
+        </p>
+        <p>
+          Each edition features expert guidance on court timelines, property valuations, legal coordination, and best practices that keep your cases moving forward efficiently while maintaining the highest standards of compliance and professionalism.
+        </p>
+        <p>
+          Our mission is simple: transform complex real estate challenges into seamless solutions. With over 3,500 families served, we understand what matters most—precision, compassion, and results you can trust.
+        </p>
+      </div>
+    </header>
+
+    <!-- ========== FLEXIBLE CONTENT SECTION ========== -->
+    <section class="content-section">
+      <div class="section-header">
+        <div>
+          <h2>This Week's Featured Insights</h2>
+          <div class="gradient-line"></div>
+        </div>
+      </div>
+
+      <div class="content-items">
+        <!-- Content Item 1 -->
+        <div class="content-card">
+          <div class="card-number">01</div>
+          <div class="card-text">
+            <h3>Understanding Court-Mandated Timelines in Probate Sales</h3>
+            <p>Navigate the critical deadlines that impact probate real estate transactions. Learn how to work efficiently within court requirements while maximizing property value and minimizing delays for executors and beneficiaries.</p>
+          </div>
+        </div>
+
+        <!-- Content Item 2 -->
+        <div class="content-card">
+          <div class="card-number">02</div>
+          <div class="card-text">
+            <h3>The Real Estate Professional's Role in Trust Administration</h3>
+            <p>Discover how specialized probate experts collaborate with trustees and attorneys to ensure compliant, timely property dispositions that meet fiduciary responsibilities and optimize outcomes for all beneficiaries involved.</p>
+          </div>
+        </div>
+
+        <!-- Content Item 3 -->
+        <div class="content-card">
+          <div class="card-number">03</div>
+          <div class="card-text">
+            <h3>Conservatorship Property Management: Best Practices for 2025</h3>
+            <p>Explore proven strategies for maintaining and selling conservatorship properties while protecting the conservatee's interests and adhering to strict legal guidelines required by California courts.</p>
+          </div>
+        </div>
+
+        <!-- Content Item 4 -->
+        <div class="content-card">
+          <div class="card-number">04</div>
+          <div class="card-text">
+            <h3>Emotional First Aid: Supporting Families Through Estate Transitions</h3>
+            <p>Beyond paperwork and procedures, learn compassionate approaches to helping grieving families make important real estate decisions during one of life's most challenging and emotionally complex transitions.</p>
+          </div>
+        </div>
+
+        <!-- Content Item 5 -->
+        <div class="content-card">
+          <div class="card-number">05</div>
+          <div class="card-text">
+            <h3>Market Analysis: Probate Property Valuations in Today's Market</h3>
+            <p>Get current market insights specific to probate properties in Southern California. Understand how condition, location, and timing affect valuations and learn strategies to optimize sale outcomes for estates.</p>
+          </div>
+        </div>
+
+        <!-- Content Item 6 -->
+        <div class="content-card">
+          <div class="card-number">06</div>
+          <div class="card-text">
+            <h3>Legal Coordination Strategies That Accelerate Property Sales</h3>
+            <p>Master the art of working seamlessly with legal teams, courts, and heirs. Discover coordination techniques that reduce friction, prevent delays, and keep probate real estate transactions moving forward efficiently.</p>
+          </div>
+        </div>
+
+        <!-- Content Item 7 -->
+        <div class="content-card">
+          <div class="card-number">07</div>
+          <div class="card-text">
+            <h3>Title Issues in Probate: Prevention and Resolution Tactics</h3>
+            <p>Identify common title complications before they derail your sale. Learn proactive strategies for resolving ownership disputes, clearing liens, and ensuring clean transfers that protect all parties involved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <div class="cta-icon-box">
+          <svg class="cta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h2>Ready to Dive Deeper?</h2>
+        <p>
+          Access the complete articles with detailed case studies, downloadable templates, attorney resources, and actionable strategies on our comprehensive blog platform.
+        </p>
+        <a href="#" class="cta-button">READ FULL BLOG</a>
+      </div>
+    </section>
+
+    <!-- ========== ADDITIONAL RESOURCES SECTION ========== -->
+    <section class="resources-section">
+      <div class="section-header">
+        <div>
+          <h2>Additional Resources</h2>
+          <div class="gradient-line"></div>
+        </div>
+        <p style="color: #4b5563; margin-top: 16px; font-size: 15px;">
+          Quick access to essential tools and resources for legal professionals
+        </p>
+      </div>
+
+      <div class="resources-grid">
+        <!-- Resource 1 -->
+        <a href="#" class="resource-card">
+          <div class="resource-icon" style="background: linear-gradient(to bottom right, #0097A7, #007a87);">
+            <svg style="width: 28px; height: 28px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3>ALTOS Market Data</h3>
+          <p>Real-time property valuations and market analysis. Enter any address to get instant market data for your probate cases.</p>
+          <div class="resource-link">
+            <span style="margin-right: 8px;">Access Now</span>
+            <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Resource 2 -->
+        <a href="#" class="resource-card">
+          <div class="resource-icon" style="background: linear-gradient(to bottom right, #FD7702, #e56902);">
+            <svg style="width: 28px; height: 28px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+            </svg>
+          </div>
+          <h3>Attorney Resources</h3>
+          <p>Curated legal forms, sample petitions, and court filing templates specific to California probate real estate.</p>
+          <div class="resource-link">
+            <span style="margin-right: 8px;">Access Now</span>
+            <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Resource 3 -->
+        <a href="#" class="resource-card">
+          <div class="resource-icon" style="background: linear-gradient(to bottom right, #0097A7, #007a87);">
+            <svg style="width: 28px; height: 28px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3>County Tools</h3>
+          <p>Direct links to Los Angeles, Orange, and San Diego County recorder offices, assessor databases, and court portals.</p>
+          <div class="resource-link">
+            <span style="margin-right: 8px;">Access Now</span>
+            <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Resource 4 -->
+        <a href="#" class="resource-card">
+          <div class="resource-icon" style="background: linear-gradient(to bottom right, #FD7702, #e56902);">
+            <svg style="width: 28px; height: 28px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>Timeline Calculator</h3>
+          <p>Interactive probate timeline tool to estimate key dates from petition filing to final distribution for your clients.</p>
+          <div class="resource-link">
+            <span style="margin-right: 8px;">Access Now</span>
+            <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== DOWNLOADABLE RESOURCES SECTION ========== -->
+    <section class="downloads-section">
+      <div class="section-header">
+        <div>
+          <h2>Downloadable Resources</h2>
+          <div class="gradient-line" style="background: linear-gradient(to right, #FD7702, #0097A7);"></div>
+        </div>
+        <p style="color: #4b5563; margin-top: 16px; font-size: 15px; max-width: 672px; margin-left: auto; margin-right: auto;">
+          Professional materials you can download instantly and share with your clients. 
+          Save hours of explanation with our plug-and-play resources.
+        </p>
+      </div>
+
+      <div class="downloads-list">
+        <!-- Download Item 1 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Complete Probate Real Estate Services Brochure</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>2.4 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 2 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Visual Probate Process Timeline (High-Resolution)</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>1.8 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 3 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Buyer's & Seller's Guide to Probate Properties</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>3.1 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 4 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Sample Letters of Administration for Property Sales</h3>
+              <div class="download-meta">
+                <span class="file-format">DOCX</span>
+                <span>156 KB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 5 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Market Comparison Analysis Template</h3>
+              <div class="download-meta">
+                <span class="file-format">XLSX</span>
+                <span>89 KB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 6 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Heir Communication Guidelines & Best Practices</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>1.2 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 7 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Property Preparation Checklist for Estate Sales</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>945 KB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 8 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Court Petition Examples for Real Estate Transactions</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>2.7 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 9 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Frequently Asked Questions: Probate Real Estate</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>1.5 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Download Item 10 -->
+        <a href="#" class="download-item">
+          <div class="download-left">
+            <div class="download-icon">
+              <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="download-info">
+              <h3>Trust vs. Probate: Real Estate Decision Matrix</h3>
+              <div class="download-meta">
+                <span class="file-format">PDF</span>
+                <span>1.1 MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-arrow">
+            <svg style="width: 20px; height: 20px; color: #4b5563;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <!-- Bottom Notice -->
+      <div class="download-notice">
+        <div class="notice-box">
+          <p>
+            <span class="notice-highlight">Share freely with your clients.</span> These resources are designed to save you time and lighten your communication load while providing exceptional value to the families you serve.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SIGNATURE / FOOTER SECTION ========== -->
+    <footer class="footer">
+      <!-- Signature Banner -->
+      <div class="signature-banner">
+        <div class="signature-box">
+          <img 
+            src="./img/as-01.jpg"
+            alt="Professional Signature"
+          />
+        </div>
+      </div>
+
+      <!-- Tagline -->
+      <div class="footer-tagline">
+        <h3>Expert Probate, Trust, and Conservatorship Services</h3>
+        <p>
+          Handled personally from start to finish. Trusted by attorneys. Relied on by families. 
+          Built to keep the process moving, even when things get complicated.
+        </p>
+        <div class="families-badge">
+          <div class="pulse-dot"></div>
+          <span>Over 3,500 Families Served</span>
+        </div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="social-links">
+        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+        <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+        <a href="#" class="social-icon" aria-label="Email">@</a>
+      </div>
+
+      <!-- Legal Footer -->
+      <div class="legal-footer">
+        <p class="company-name">833PROBAID® | Probate Real Estate Services</p>
+        <p>311 N. Robertson Blvd, Suite 444 | Beverly Hills, CA 90211</p>
+        <p>(833) PROBAID | info@833probaid.com | www.833probaid.com</p>
+        <p class="disclaimer">
+          This newsletter is for informational purposes only and does not constitute legal or financial advice. 
+          Consult with qualified professionals regarding your specific situation.
+        </p>
+        
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <a href="#">Unsubscribe</a>
+          <span class="footer-divider">|</span>
+          <a href="#">Update Preferences</a>
+          <span class="footer-divider">|</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  
+</body>
+</html>
